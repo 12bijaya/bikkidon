@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/signup.css" />
+    <title>Register</title>
+    <script src="../js/signup.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <div class="header">
+            <img src="../image/AdobeStock_570741407_Preview.png" alt="Haven Peace Clinic">
+        </div>
+    </header>
+
+    <div id="idm_main">
+        <h1>Create Your Account</h1>
+
+        <form action="/register/registerpatient" method="post"  onsubmit="return validateForm()">
+            <div class="form-section">
+                <h3>Enter patient information</h3>
+
+                <div class="form-item">
+                    <label for="HavenClinicNumber">Haven Clinic Number:</label>
+                    <input type="text" id="HavenClinicNumber" name="HavenClinicNumber" />
+                    <p class="help"><a href="#haven_message">Where to find your Haven Clinic number</a></p>
+                </div>
+
+                <div class="form-item">
+                    <label for="ActivationCode">Activation Code:</label>
+                    <input type="text" id="ActivationCode" name="ActivationCode" />
+                    <p class="help"><a href="#activation_code">Don't have an activation code?</a></p>
+                </div>
+
+                <div class="form-item">
+                    <label for="Email">Primary Email Address:</label>
+                    <input type="email" id="Email" name="Email" />
+                </div>
+
+                <div class="form-item">
+                    <label for="ReTypeEmail">Retype Email Address:</label>
+                    <input type="email" id="ReTypeEmail" name="ReTypeEmail" />
+                </div>
+
+                <div class="form-item">
+                    <label for="FirstName">Legal First Name:</label>
+                    <input type="text" id="FirstName" name="FirstName" />
+                </div>
+
+                <div class="form-item optional">
+                    <label for="MiddleName">Legal Middle Name:</label>
+                    <input type="text" id="MiddleName" name="MiddleName" />
+                </div>
+
+                <div class="form-item">
+                    <label for="LastName">Legal Last Name:</label>
+                    <input type="text" id="LastName" name="LastName" />
+                </div>
+
+                <div class="form-item">
+                    <label for="BirthDate">Birth Date:</label>
+                    <input type="date" id="BirthDate" name="BirthDate" />
+                </div>
+                <div class="form-item">
+                    <input type="submit" id="submitBtn" value="Continue" />
+                </div>
+            </div>
+        </form>
+
+        <div class="legal">
+            <p><a href="https://www.havenpeaceclinic.com/global" target="_blank" class="disclaimer">LEGAL RESTRICTIONS AND TERMS OF USE APPLICABLE TO THIS SITE</a></p>
+            <p>Use of this site signifies your agreement to the terms of use.<br />&copy; 1998 - 2024 Haven Peace Clinic Foundation for Medical Education and Research. All rights reserved.</p>
+        </div>
+    </div>
+
+</body>
+</html>

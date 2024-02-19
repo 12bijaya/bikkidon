@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="../css/login.css">
+    <script src="../js/sign.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <img src="../image/AdobeStock_570741407_Preview.png"  class="company-logo">
+        <label class="jha"> One account for all Haven Clinic services
+            Log in to patient portal
+        </label>
+        <div class="login-container">
+            <form class="login-form" action="#" method="POST">
+                <h2>Login</h2>
+                <div class="input-group">
+                    <label>Username:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password:</label>
+                    <div class="password-container">
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                </div>
+                <button type="submit" onclick="validateForm()">Login</button>
+            </form>
+            <br><br>
+           <label class="ithi"> Do not have an account <a href="../html/signup.html">sign up</a></label>
+        </div>
+        <footer class="footer">
+            <p>&copy; 2024 Your Company Name. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

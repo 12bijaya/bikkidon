@@ -1,0 +1,120 @@
+/* Reset default margin and font */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Set background image */
+body {
+    background-image: url('../../image/ligligkot.jpg');
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Do not repeat the background image */
+}
+
+/* Container styles */
+.container {
+    width: 50%;
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 10px 0;
+    height: 20%;
+}
+header {
+    background-color: black; /* Semi-transparent white background */
+    padding: 20px;
+    text-align: center;
+}
+.container1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+.logo {
+    margin: 0;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin-left: 30px;
+}
+
+.menu li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.menu li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+.menu li a:hover {
+    color: #0056b3; /* Change color on hover */
+}
+
+/* Main section styles */
+.dialog-box {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    position: relative; /* Required for pseudo-element */
+}
+
+.dialog-box::before {
+    content: '';
+    position: absolute;
+    top: -20px; /* Adjust based on your design */
+    left: 50%;
+    width: 40px;
+    height: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-bottom: none;
+    border-radius: 50% 50% 0 0;
+    transform: translateX(-50%) rotate(45deg);
+}
+
+
+/* Form styles */
+form {
+    margin-bottom: 20px;
+}
+
+form input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition for background color change */
+}
+
+form button:hover {
+    background-color: #0056b3; /* Change background color on hover */
+}
+
+/* Footer styles */
+footer {
+    background-color:black;
+    padding: 10px 0;
+    text-align: center;
+    color: #fff;
+}
+.logo {
+    display: block;
+    margin: 0 auto 20px; /* Center the logo and add spacing */
+    width: 100px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
